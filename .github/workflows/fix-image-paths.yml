@@ -1,0 +1,30 @@
+name: Fix birthday image paths
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  fix-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fix image paths
+        run: |
+          if grep -q 'photos/' index.html; then
+            sed -i 's#photos/##g' index.html
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add index.html
+            git commit -m 'Fix birthday image paths'
+            git push
+          else
+            echo 'Image paths are already correct.'
+          fi
