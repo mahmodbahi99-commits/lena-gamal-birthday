@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lena Gamal — Qween of the World 👑</title>
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    margin:0;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    color:#402733;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #ffe1eb,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #ffe8d8,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #fff9f3
+        );
+
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+#login{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(60px);
+
+    opacity:.5;
+}
+
+.glow.one{
+
+    width:320px;
+
+    height:320px;
+
+    background:#ff8fab;
+
+    top:-100px;
+
+    right:-80px;
+}
+
+.glow.two{
+
+    width:320px;
+
+    height:320px;
+
+    background:#ffd166;
+
+    bottom:-100px;
+
+    left:-80px;
+}
+
+.login-box{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:440px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .78
+        );
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid white;
+
+    border-radius:32px;
+
+    box-shadow:
+        0 30px 90px
+        rgba(
+            100,
+            35,
+            60,
+            .15
+        );
+
+    animation:
+        rise .8s ease;
+}
+
+.login-heart{
+
+    font-size:65px;
+
+    animation:
+        pulse 1.7s infinite;
+}
+
+.login-box h1{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:40px;
+
+    margin:
+        10px
+        0;
+}
+
+.login-box p{
+
+    line-height:2;
+
+    opacity:.7;
+}
+
+input{
+
+    width:100%;
+
+    padding:17px;
+
+    margin-top:15px;
+
+    border:
+        1px solid
+        #efc7d5;
+
+    border-radius:17px;
+
+    font-size:19px;
+
+    text-align:center;
+
+    letter-spacing:5px;
+
+    outline:none;
+}
+
+input:focus{
+
+    border-color:#ff5c8a;
+
+    box-shadow:
+        0 0 0 4px
+        #ff5c8a20;
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:13px;
+
+    border:0;
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff5c8a,
+            #ff8fab
+        );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 30px
+        #ff5c8a35;
+
+    transition:.25s;
+}
+
+button:hover{
+
+    transform:
+        translateY(-3px);
+}
+
+#error{
+
+    height:25px;
+
+    margin-top:8px;
+
+    color:#d92d5b;
+
+    font-size:14px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+#site{
+
+    display:none;
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+nav{
+
+    position:fixed;
+
+    top:15px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index:20;
+
+    padding:9px;
+
+    background:
+        #ffffffc2;
+
+    backdrop-filter:
+        blur(15px);
+
+    border-radius:100px;
+
+    box-shadow:
+        0 10px 35px
+        #6b263b16;
+
+    display:flex;
+
+    gap:5px;
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#402733;
+
+    padding:
+        8px
+        13px;
+
+    border-radius:100px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    transition:.2s;
+}
+
+nav a:hover{
+
+    background:white;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+    min-height:100vh;
+
+    padding:
+        110px
+        22px
+        70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1100px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    text-align:center;
+}
+
+.date{
+
+    display:inline-block;
+
+    padding:
+        9px
+        18px;
+
+    background:white;
+
+    border-radius:100px;
+
+    font-size:13px;
+
+    box-shadow:
+        0 8px 25px
+        #7c2d4412;
+}
+
+.hero h2{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            55px,
+            9vw,
+            100px
+        );
+
+    line-height:.95;
+
+    margin:
+        28px
+        0
+        18px;
+}
+
+.pink{
+
+    background:
+        linear-gradient(
+            90deg,
+            #ef476f,
+            #ff5c8a,
+            #ff9fba
+        );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+}
+
+.hero-description{
+
+    max-width:680px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:2;
+
+    opacity:.75;
+}
+
+.qween{
+
+    margin-top:25px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    color:#bd8500;
+
+    text-shadow:
+        0 2px 10px
+        #ffd16670;
+}
+
+.age{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:25px;
+
+    padding:
+        14px
+        23px;
+
+    background:white;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 15px 40px
+        #6b263b12;
+
+    font-weight:bold;
+}
+
+.age strong{
+
+    color:#ef476f;
+
+    font-size:36px;
+}
+
+.scroll{
+
+    margin-top:55px;
+
+    opacity:.5;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   FLOATING
+========================= */
+
+.floating{
+
+    position:absolute;
+
+    font-size:32px;
+
+    animation:
+        float 5s
+        ease-in-out
+        infinite;
+}
+
+.f1{
+
+    top:20%;
+
+    right:10%;
+}
+
+.f2{
+
+    top:35%;
+
+    left:8%;
+
+    animation-delay:1s;
+}
+
+.f3{
+
+    bottom:15%;
+
+    right:17%;
+
+    animation-delay:2s;
+}
+
+.f4{
+
+    bottom:20%;
+
+    left:18%;
+
+    animation-delay:3s;
+}
+
+
+/* =========================
+   TITLES
+========================= */
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:38px;
+}
+
+.title h3{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:48px;
+
+    margin:
+        0
+        0
+        8px;
+}
+
+.title p{
+
+    opacity:.65;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.card{
+
+    padding:30px;
+
+    background:
+        #ffffffbd;
+
+    backdrop-filter:
+        blur(15px);
+
+    border-radius:27px;
+
+    border:1px solid white;
+
+    box-shadow:
+        0 18px 45px
+        #6b263b12;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:
+        translateY(-9px)
+        rotate(-1deg);
+}
+
+.icon{
+
+    font-size:45px;
+}
+
+.card h4{
+
+    font-size:22px;
+
+    margin:
+        13px
+        0
+        7px;
+}
+
+.card p{
+
+    line-height:2;
+
+    opacity:.7;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:30px;
+
+    padding:20px;
+}
+
+.polaroid{
+
+    background:#fff;
+
+    padding:
+        10px
+        10px
+        45px
+        10px;
+
+    border-radius:3px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            70,
+            30,
+            45,
+            .15
+        );
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.polaroid:nth-child(odd){
+
+    transform:
+        rotate(-2deg);
+}
+
+.polaroid:nth-child(even){
+
+    transform:
+        rotate(2deg);
+}
+
+.polaroid:hover{
+
+    transform:
+        rotate(0deg)
+        translateY(-12px)
+        scale(1.03);
+
+    box-shadow:
+        0 25px 50px
+        rgba(
+            70,
+            30,
+            45,
+            .22
+        );
+
+    z-index:5;
+}
+
+.polaroid img{
+
+    position:relative;
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.caption{
+
+    position:absolute;
+
+    bottom:10px;
+
+    left:0;
+
+    right:0;
+
+    text-align:center;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:17px;
+
+    color:#49343b;
+}
+
+
+/* =========================
+   PHOTO VIEWER
+========================= */
+
+.photo-viewer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+        rgba(
+            25,
+            10,
+            18,
+            .94
+        );
+
+    z-index:100;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+    animation:
+        fadeIn .3s ease;
+}
+
+.photo-viewer img{
+
+    max-width:95vw;
+
+    max-height:90vh;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 30px 100px
+        rgba(
+            0,
+            0,
+            0,
+            .5
+        );
+}
+
+.close-photo{
+
+    position:absolute;
+
+    top:20px;
+
+    right:25px;
+
+    width:50px;
+
+    height:50px;
+
+    padding:0;
+
+    margin:0;
+
+    border-radius:50%;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .15
+        );
+
+    backdrop-filter:
+        blur(10px);
+
+    font-size:25px;
+
+    color:white;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:
+        48px
+        40px;
+
+    border-radius:32px;
+
+    box-shadow:
+        0 25px 70px
+        #6b263b15;
+
+    line-height:2.3;
+
+    font-size:18px;
+
+    position:relative;
+}
+
+.letter:before{
+
+    content:"♡";
+
+    position:absolute;
+
+    top:10px;
+
+    right:23px;
+
+    font-size:48px;
+
+    color:#ffb3c6;
+}
+
+.signature{
+
+    text-align:left;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:27px;
+
+    margin-top:25px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+
+    text-align:center;
+}
+
+.gift{
+
+    font-size:105px;
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    animation:
+        shake 1.7s infinite;
+}
+
+.final-message{
+
+    display:none;
+
+    max-width:700px;
+
+    margin:
+        30px
+        auto
+        0;
+
+    padding:40px;
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 25px 70px
+        #6b263b15;
+
+    animation:
+        rise .7s ease;
+}
+
+.final-message h3{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:40px;
+}
+
+.final-message strong{
+
+    color:#ff4f81;
+
+    font-size:20px;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+#confetti{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:200;
+}
+
+.conf{
+
+    position:absolute;
+
+    top:-30px;
+
+    font-size:20px;
+
+    animation:
+        fall
+        linear
+        forwards;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    text-align:center;
+
+    padding:
+        30px
+        20px
+        60px;
+
+    opacity:.55;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes rise{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+    }
+}
+
+@keyframes pulse{
+
+    50%{
+
+        transform:
+            scale(1.15);
+    }
+}
+
+@keyframes float{
+
+    50%{
+
+        transform:
+            translateY(-20px)
+            rotate(8deg);
+    }
+}
+
+@keyframes shake{
+
+    0%,100%{
+
+        transform:
+            rotate(0);
+    }
+
+    25%{
+
+        transform:
+            rotate(-8deg);
+    }
+
+    75%{
+
+        transform:
+            rotate(8deg);
+    }
+}
+
+@keyframes fall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:.2;
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+    }
+
+    to{
+
+        opacity:1;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:750px){
+
+    nav{
+
+        width:94%;
+
+        justify-content:center;
+    }
+
+    nav a{
+
+        font-size:10px;
+
+        padding:
+            7px
+            8px;
+    }
+
+    .hero h2{
+
+        font-size:57px;
+    }
+
+    .hero-description{
+
+        font-size:16px;
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:18px;
+
+        padding:5px;
+    }
+
+    .polaroid img{
+
+        height:200px;
+    }
+
+    .caption{
+
+        font-size:13px;
+    }
+
+    .letter{
+
+        padding:
+            35px
+            24px;
+
+        font-size:16px;
+    }
+
+    .title h3{
+
+        font-size:40px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     LOGIN
+========================= -->
+
+<div id="login">
+
+    <div class="glow one"></div>
+
+    <div class="glow two"></div>
+
+
+    <div class="login-box">
+
+        <div class="login-heart">
+
+            🎀
+
+        </div>
+
+
+        <h1>
+
+            One little surprise…
+
+        </h1>
+
+
+        <p>
+
+            الموقع ده مش لأي حد 👀
+
+            <br>
+
+            اكتبي الباسورد
+            عشان ندخل عالمك.
+
+        </p>
+
+
+        <input
+            id="password"
+            type="password"
+            inputmode="numeric"
+            maxlength="8"
+            placeholder="Birthday Password"
+        >
+
+
+        <button
+            onclick="unlock()"
+        >
+
+            Open My Surprise ♡
+
+        </button>
+
+
+        <div id="error"></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN SITE
+========================= -->
+
+<div id="site">
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="#home">
+
+        البداية
+
+    </a>
+
+
+    <a href="#reasons">
+
+        Qween 👑
+
+    </a>
+
+
+    <a href="#memories">
+
+        ذكريات
+
+    </a>
+
+
+    <a href="#letter">
+
+        رسالة
+
+    </a>
+
+
+    <a href="#final">
+
+        🎁
+
+    </a>
+
+</nav>
+
+
+
+<!-- CONFETTI -->
+
+<div id="confetti"></div>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home">
+
+
+    <span class="floating f1">
+
+        💗
+
+    </span>
+
+
+    <span class="floating f2">
+
+        ✨
+
+    </span>
+
+
+    <span class="floating f3">
+
+        🎂
+
+    </span>
+
+
+    <span class="floating f4">
+
+        🌷
+
+    </span>
+
+
+    <div class="container hero">
+
+
+        <div class="date">
+
+            19 • 08 • 2026 ✨
+
+        </div>
+
+
+        <h2>
+
+            Happy
+
+            <span class="pink">
+
+                24th
+
+            </span>
+
+            <br>
+
+            Birthday,
+
+            <br>
+
+            <span class="pink">
+
+                Lena Gamal
+
+            </span>
+
+            👑
+
+        </h2>
+
+
+        <div class="qween">
+
+            Qween of the World 👑✨
+
+        </div>
+
+
+        <p class="hero-description">
+
+            مش مجرد عيد ميلاد…
+
+            دي صفحة صغيرة معمولة مخصوص
+            لأجمل Qween،
+            عشان تفكّرك قد إيه وجودك
+            في حياة الناس اللي بتحبك
+            له قيمة. ❤️
+
+        </p>
+
+
+        <div class="age">
+
+            Officially
+
+            <strong>
+
+                24
+
+            </strong>
+
+            🎂
+
+        </div>
+
+
+        <div class="scroll">
+
+            ↓ انزلي…
+            لسه المفاجأة مخلصتش
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     REASONS
+========================= -->
+
+<section id="reasons">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <h3>
+
+                Why Lena? 👑
+
+            </h3>
+
+
+            <p>
+
+                لأن كلمة Bestie
+                لوحدها مش كفاية.
+
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    👑
+
+                </div>
+
+
+                <h4>
+
+                    Qween Energy
+
+                </h4>
+
+
+                <p>
+
+                    مش محتاجة تاج
+                    عشان تكوني Qween.
+
+                    الـ energy لوحدها
+                    بتتكلم.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    🫶
+
+                </div>
+
+
+                <h4>
+
+                    الأمان
+
+                </h4>
+
+
+                <p>
+
+                    في ناس وجودهم
+                    لوحده بيخلّي
+                    الدنيا أهدى.
+
+                    وإنتِ من الناس دي.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    😂
+
+                </div>
+
+
+                <h4>
+
+                    الضحك
+
+                </h4>
+
+
+                <p>
+
+                    كمية المواقف
+                    اللي تستحق تتحكي تاني…
+
+                    مش طبيعية 😂
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    💗
+
+                </div>
+
+
+                <h4>
+
+                    القلب
+
+                </h4>
+
+
+                <p>
+
+                    أجمل حاجة فيكي
+                    إنك بتسيبي أثر حلو
+                    من غير ما تحاولي.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    ✨
+
+                </div>
+
+
+                <h4>
+
+                    Your Energy
+
+                </h4>
+
+
+                <p>
+
+                    في حاجة في وجودك
+                    بتخلي أي مكان أحلى.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    🌷
+
+                </div>
+
+
+                <h4>
+
+                    Just Lena
+
+                </h4>
+
+
+                <p>
+
+                    ببساطة…
+
+                    مفيش نسخة تانية منك.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section id="memories">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <h3>
+
+                Our Memories 📸
+
+            </h3>
+
+
+            <p>
+
+                كل صورة وراها حكاية.
+
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/1.jpg')"
+            >
+
+                <img
+                    src="photos/1.jpg"
+                    alt="Lena Memory 1"
+                >
+
+                <div class="caption">
+
+                    A beautiful memory ♡
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/2.jpg')"
+            >
+
+                <img
+                    src="photos/2.jpg"
+                    alt="Lena Memory 2"
+                >
+
+                <div class="caption">
+
+                    That smile ✨
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/3.jpg')"
+            >
+
+                <img
+                    src="photos/3.jpg"
+                    alt="Lena Memory 3"
+                >
+
+                <div class="caption">
+
+                    Best memories 💗
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/4.jpg')"
+            >
+
+                <img
+                    src="photos/4.jpg"
+                    alt="Lena Memory 4"
+                >
+
+                <div class="caption">
+
+                    Qween moment 👑
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/5.jpg')"
+            >
+
+                <img
+                    src="photos/5.jpg"
+                    alt="Lena Memory 5"
+                >
+
+                <div class="caption">
+
+                    Just Lena 🌷
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/6.jpg')"
+            >
+
+                <img
+                    src="photos/6.jpg"
+                    alt="Lena Memory 6"
+                >
+
+                <div class="caption">
+
+                    One for the books ✨
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/7.jpg')"
+            >
+
+                <img
+                    src="photos/7.jpg"
+                    alt="Lena Memory 7"
+                >
+
+                <div class="caption">
+
+                    Forever a favorite ♡
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/8.jpg')"
+            >
+
+                <img
+                    src="photos/8.jpg"
+                    alt="Lena Memory 8"
+                >
+
+                <div class="caption">
+
+                    Another happy day 💕
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/9.jpg')"
+            >
+
+                <img
+                    src="photos/9.jpg"
+                    alt="Lena Memory 9"
+                >
+
+                <div class="caption">
+
+                    Our little story 📖
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/10.jpg')"
+            >
+
+                <img
+                    src="photos/10.jpg"
+                    alt="Lena Memory 10"
+                >
+
+                <div class="caption">
+
+                    To many more 🎂
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/11.jpg')"
+            >
+
+                <img
+                    src="photos/11.jpg"
+                    alt="Lena Memory 11"
+                >
+
+                <div class="caption">
+
+                    Another chapter ✨
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/12.jpg')"
+            >
+
+                <img
+                    src="photos/12.jpg"
+                    alt="Lena Memory 12"
+                >
+
+                <div class="caption">
+
+                    Little moments 💗
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/13.jpg')"
+            >
+
+                <img
+                    src="photos/13.jpg"
+                    alt="Lena Memory 13"
+                >
+
+                <div class="caption">
+
+                    Forever young 🌸
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/14.jpg')"
+            >
+
+                <img
+                    src="photos/14.jpg"
+                    alt="Lena Memory 14"
+                >
+
+                <div class="caption">
+
+                    Queen behavior 👑
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="photo polaroid"
+                onclick="openPhoto('photos/15.jpg')"
+            >
+
+                <img
+                    src="photos/15.jpg"
+                    alt="Lena Memory 15"
+                >
+
+                <div class="caption">
+
+                    More memories to come ❤️
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     LETTER
+========================= -->
+
+<section id="letter">
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <h3>
+
+                A Little Message
+                For Lena 💌
+
+            </h3>
+
+
+            <p>
+
+                من الـ Bestie بتاعك.
+
+            </p>
+
+        </div>
+
+
+        <div class="letter">
+
+
+            <p>
+
+                كل سنة وإنتِ طيبة يا لول ❤️
+
+                <br>
+
+                ودايمًا يارب في خير
+                وسعادة دايمًا.
+
+            </p>
+
+
+            <p>
+
+                24 سنة وقدامك العمر كله،
+
+                وعشان كده أتمنى السنة دي
+                تكون بداية لحاجات كتير
+                حلوة في حياتك.
+
+            </p>
+
+
+            <p>
+
+                أتمنى تلاقي فيها
+                كل حاجة نفسك فيها،
+
+                ناس شبه قلبك،
+
+                فرص تستاهليها،
+
+                وضحك كتير،
+
+                وذكريات تفضلي
+                تفتكريها بابتسامة.
+
+            </p>
+
+
+            <p>
+
+                ومهما الحياة اتغيرت،
+
+                ومهما كل واحد فينا
+                انشغل في طريقه،
+
+                أتمنى تفضلي دايمًا
+                عارفة إن ليكي مكان
+                ثابت في قلبي.
+
+            </p>
+
+
+            <p>
+
+                Happy Birthday to one
+                of the people who make
+                life better just by being
+                in it. 🎂✨
+
+            </p>
+
+
+            <div class="signature">
+
+                — Your Bestie ♡
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section id="final">
+
+    <div class="container final">
+
+
+        <div class="title">
+
+            <h3>
+
+                Wait… 🎁
+
+            </h3>
+
+
+            <p>
+
+                لسه في حاجة أخيرة يا Lena.
+
+            </p>
+
+        </div>
+
+
+        <div
+            class="gift"
+            onclick="openGift()"
+        >
+
+            🎁
+
+        </div>
+
+
+        <div
+            id="finalMessage"
+            class="final-message"
+        >
+
+            <h3>
+
+                You Deserve
+                The World 🌎❤️
+
+            </h3>
+
+
+            <p>
+
+                أتمنى الـ 24
+                تكون بداية لأحلى
+                سنين حياتك.
+
+                <br><br>
+
+                اضحكي كتير،
+                عيشي أكتر،
+                وحافظي دايمًا
+                على الـ Qween
+                اللي جواكي. 👑
+
+                <br><br>
+
+                وماتنسيش…
+
+                <br>
+
+                العالم محتاج
+                Lena Gamal. ❤️
+
+            </p>
+
+
+            <strong>
+
+                Happy Birthday
+                Qween! 👑🎂💗
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    Made especially for
+
+    <strong>
+
+        Lena Gamal
+
+    </strong>
+
+    👑
+
+    <br>
+
+    Qween of the World ♡
+
+</footer>
+
+
+</div>
+
+
+
+<!-- =========================
+     FULLSCREEN PHOTO VIEWER
+========================= -->
+
+<div
+    id="photoViewer"
+    class="photo-viewer"
+    onclick="closePhoto()"
+>
+
+
+    <button
+        class="close-photo"
+        onclick="
+            event.stopPropagation();
+            closePhoto();
+        "
+    >
+
+        ×
+
+    </button>
+
+
+    <img
+        id="largePhoto"
+        src=""
+        alt="Lena"
+        onclick="
+            event.stopPropagation();
+        "
+    >
+
+</div>
+
+
+
+<script>
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+function unlock(){
+
+    const password =
+        document
+        .getElementById(
+            "password"
+        )
+        .value
+        .trim();
+
+
+    const error =
+        document
+        .getElementById(
+            "error"
+        );
+
+
+    if(
+        password ===
+        "1982002"
+    ){
+
+        document
+        .getElementById(
+            "login"
+        )
+        .style.display =
+        "none";
+
+
+        document
+        .getElementById(
+            "site"
+        )
+        .style.display =
+        "block";
+
+
+        window.scrollTo(
+            0,
+            0
+        );
+
+
+        launchConfetti();
+
+    }
+
+    else{
+
+        error.textContent =
+            "الباسورد غلط 😌 حاولي تاني يا Qween 👑";
+
+    }
+
+}
+
+
+/* =========================
+   ENTER KEY
+========================= */
+
+document
+.getElementById(
+    "password"
+)
+.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key ===
+            "Enter"
+        ){
+
+            unlock();
+
+        }
+
+    }
+);
+
+
+/* =========================
+   PHOTO VIEWER
+========================= */
+
+function openPhoto(
+    photo
+){
+
+    const viewer =
+        document
+        .getElementById(
+            "photoViewer"
+        );
+
+
+    const image =
+        document
+        .getElementById(
+            "largePhoto"
+        );
+
+
+    image.src =
+        photo;
+
+
+    viewer.style.display =
+        "flex";
+
+}
+
+
+function closePhoto(){
+
+    const viewer =
+        document
+        .getElementById(
+            "photoViewer"
+        );
+
+
+    viewer.style.display =
+        "none";
+
+}
+
+
+/* =========================
+   GIFT
+========================= */
+
+function openGift(){
+
+    const message =
+        document
+        .getElementById(
+            "finalMessage"
+        );
+
+
+    message.style.display =
+        "block";
+
+
+    launchConfetti();
+
+
+    setTimeout(
+        function(){
+
+            message.scrollIntoView({
+
+                behavior:
+                    "smooth",
+
+                block:
+                    "center"
+
+            });
+
+        },
+        100
+    );
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function launchConfetti(){
+
+    const container =
+        document
+        .getElementById(
+            "confetti"
+        );
+
+
+    const emojis = [
+
+        "💗",
+        "✨",
+        "🎀",
+        "🌸",
+        "💖",
+        "⭐",
+        "🌷",
+        "👑",
+        "🎂"
+
+    ];
+
+
+    for(
+        let i = 0;
+        i < 100;
+        i++
+    ){
+
+        const element =
+            document
+            .createElement(
+                "div"
+            );
+
+
+        element.className =
+            "conf";
+
+
+        element.textContent =
+            emojis[
+                Math.floor(
+                    Math.random()
+                    *
+                    emojis.length
+                )
+            ];
+
+
+        element.style.left =
+            Math.random()
+            *
+            100
+            +
+            "vw";
+
+
+        element.style.fontSize =
+            12
+            +
+            Math.random()
+            *
+            20
+            +
+            "px";
+
+
+        element.style.animationDuration =
+            2.5
+            +
+            Math.random()
+            *
+            3
+            +
+            "s";
+
+
+        element.style.animationDelay =
+            Math.random()
+            *
+            .7
+            +
+            "s";
+
+
+        container.appendChild(
+            element
+        );
+
+
+        setTimeout(
+            function(){
+
+                element.remove();
+
+            },
+            6500
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
